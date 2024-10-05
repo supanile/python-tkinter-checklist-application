@@ -43,9 +43,8 @@ def confirm_remove():
             listbox.delete(selected)
 
 def confirm_clear():
-    if listbox.size() > 0:
-        if messagebox.askyesno('Confirm Clear', 'Are you sure you want to clear all items?'):
-            listbox.delete(0, END)
+    if messagebox.askyesno('Confirm Clear', 'Are you sure you want to clear all items?'):
+        listbox.delete(0, END)
 
 def confirm_quit():
     if messagebox.askyesno('Confirm Exit', 'Are you sure you want to exit?'):
